@@ -4,12 +4,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAhAKvp2gNq4zjBh9TkdNx4EvU8tAR65QU",
-  authDomain: "swiggy-fdf55.firebaseapp.com",
-  projectId: "swiggy-fdf55",
-  storageBucket: "swiggy-fdf55.firebasestorage.app",
-  messagingSenderId: "624397345411",
-  appId: "1:624397345411:web:5cf55492fb44d438fe31b6"
+    "apiKey": import.meta.env.VITE_APIKEY,
+    "authDomain": import.meta.env.VITE_AUTHDOMAIN,
+    "projectId": import.meta.env.VITE_PROJECTID,
+    "storageBucket": import.meta.env.VITE_STORAGEBUCKET,
+    "messagingSenderId": import.meta.env.VITE_MESSAGINGSENDERID,
+    "appId": import.meta.env.VITE_APPID
 }
 
 // Initialize Firebase
