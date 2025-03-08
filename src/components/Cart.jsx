@@ -55,7 +55,7 @@ function Cart() {
     }
     function handlePlaceOrder() {
         if (!userData) {
-            toast.error("login krle bhai");
+            toast.error("Login for placing order");
             dispatch(toggleLogin())
             return;
         }
@@ -66,10 +66,27 @@ function Cart() {
         return (
             <div className="w-full">
                 <div className="w-[50%]  mx-auto">
-                    <h1>kuch order krle bhai bhuka marega kya....</h1>
-                    <Link to="/" className="bg-green-500 p-2 inline-block my-3">
-                        Yaha se krle bhai order
-                    </Link>
+                <h1
+  style={{
+    color: "#333",
+    fontSize: "36px",
+    fontWeight: "bold",
+    textTransform: "capitalize",
+    letterSpacing: "1px",
+    textAlign: "left",
+    margin: "10px 0",
+  }}
+>
+  Order Now
+</h1>
+
+                    <Link
+  to="/"
+  className="bg-gradient-to-r from-orange-400 to-red-400 border p-2 inline-block my-3 rounded-md"
+>
+  Go to home
+</Link>
+
                 </div>
             </div>
         );
@@ -198,13 +215,15 @@ function Cart() {
                 <div className="flex justify-between">
                     <button
                         onClick={handlePlaceOrder}
-                        className="p-3 bg-green-600 rounded-lg my-7"
+                        
+  className="bg-gradient-to-r from-orange-400 to-red-400 border p-2 inline-block my-3 rounded-md"
                     >
                         Place order
                     </button>
                     <button
                         onClick={handleClearCart}
-                        className="p-3 bg-green-600 rounded-lg my-7"
+                        
+  className="bg-gradient-to-r from-orange-400 to-red-400 border p-2 inline-block my-3 rounded-md"
                     >
                         clear cart
                     </button>

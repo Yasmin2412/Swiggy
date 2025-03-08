@@ -183,11 +183,12 @@ function Head() {
 
                         <div className="flex items-center">
                             <Link to={"/"}>
-                                <div className="w-20">
-                                    <img
-                                        src="https://1000logos.net/wp-content/uploads/2021/05/Swiggy-emblem.png"
-                                        alt=""
-                                    />
+                            <div className="w-20  ">
+                                     <img
+        src="https://t3.ftcdn.net/jpg/02/41/30/72/360_F_241307210_MjjaJC3SJy2zJZ6B7bKGMRsKQbdwRSze.jpg"
+        alt="Swiggy Logo"
+        className="hover:scale-105 transition-transform duration-300 mix-blend-multiply font-size-4xl justify-center"
+    />
                                 </div>
                             </Link>
                             <div
@@ -320,6 +321,59 @@ function Head() {
                 </div>
 
                 <Outlet />
+                 {/* 🔹 Footer Section */}
+            <footer className="bg-gradient-to-r from-orange-400 to-red-400 text-grey py-10 mt-10">
+                <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+                    
+                    {/* Company Info */}
+                    <div>
+                        <h3 className="text-lg font-bold mb-4"><i>food</i></h3>
+                        <p className="text-sm opacity-75">Delivering happiness to your doorstep.</p>
+                    </div>
+
+                    {/* Quick Links */}
+                    <div>
+                        <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+                        <ul className="space-y-2">
+                            <li><Link to="/about" className="hover:underline opacity-75">About Us</Link></li>
+                            <li><Link to="/careers" className="hover:underline opacity-75">Careers</Link></li>
+                            <li><Link to="/terms" className="hover:underline opacity-75">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy" className="hover:underline opacity-75">Privacy Policy</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Help Section */}
+                    <div>
+                        <h3 className="text-lg font-bold mb-4">Help & Support</h3>
+                        <ul className="space-y-2">
+                            <li><Link to="/faq" className="hover:underline opacity-75">FAQs</Link></li>
+                            <li><Link to="/contact" className="hover:underline opacity-75">Contact Us</Link></li>
+                            <li><Link to="/refunds" className="hover:underline opacity-75">Refund Policy</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Social Media */}
+                    <div>
+                        <h3 className="text-lg font-bold mb-4">Follow Us</h3>
+                        <div className="flex space-x-4">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <i className="text-xl fi fi-brands-facebook hover:text-gray-400"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                <i className="text-xl fi fi-brands-twitter hover:text-gray-400"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                <i className="text-xl fi fi-brands-instagram hover:text-gray-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Copyright */}
+                <div className="text-center text-sm opacity-75 mt-6 border-t border-gray-700 pt-4">
+                    &copy; {new Date().getFullYear()}  All rights reserved.
+                </div>
+            </footer>
             </div>
         </>
     );

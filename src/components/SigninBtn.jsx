@@ -41,7 +41,7 @@ function SigninBtn() {
             ) : (
                 <button
                     onClick={handleAuth}
-                    className="my-5 w-full text-2xl p-5 bg-[#fc8019] text-white"
+                    className="my-5 w-full text-2xl p-5 bg-gradient-to-r from-orange-400 to-red-400 my-3 rounded-md border p-2 inline-block my-3 rounded-mdtext-white"
                 >
                     Login with GOOGLE
                 </button>

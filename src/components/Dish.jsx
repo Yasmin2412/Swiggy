@@ -132,7 +132,7 @@ function Dish({
                         </button>
                         <button
                             onClick={handleClearCart}
-                            className="  w-1/2 p-3 bg-green-600 text-white "
+                            className="  w-1/2 p-3 bg-purple-600 text-white "
                         >
                             Yes, start Afresh
                         </button>
